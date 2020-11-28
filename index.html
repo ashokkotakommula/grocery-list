@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List by Ashok</title>
+    <link rel = "icon" href = "https://res.cloudinary.com/du0xsvxag/image/upload/v1606576342/carrt_ueugq2.svg" 
+    type = "image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css"/>
+    
+</head>
+<body>
+    <h1>Grocery List</h1>
+    <div class="box">
+        <div>
+            <input id="item-name-input" type="text" placeholder="Name"/><br>            
+
+            <input id="item-price-input" type="number" min="0"  placeholder="Price (₹) "/><br>
+
+            <input id="item-quant-input" type="number" min="0"  placeholder="Quantity (kg)"/><br>
+            
+            <button onclick="insertItem()">Add</button>
+            <br>
+        </div>
+
+    </div>
+    <h4 id="total">Grand Total: ₹ 0.00,&nbsp;&nbsp; No of Items: 0</h4>
+    <div class="tab" id="printer">
+        
+        <table id="tab">
+            <tr>
+                <th>Name</th>
+                <th>Price (₹)</th>
+                <th>Quantity (kg)</th>
+                <th>Total (₹)</th>
+                <th>Delete</th>
+            </tr>
+        </table>
+        
+    </div>
+    <div class="pri">
+        <button id="bt" onclick="window.print()">Print this page</button>
+    </div>
+</body>
+
+<script type="text/javascript" src="index.js"></script>
+</html>

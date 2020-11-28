@@ -1,0 +1,100 @@
+body {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    background: linear-gradient(140deg,teal, lightblue);
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    font-family: 'Ubuntu', sans-serif, Verdana, Geneva, Tahoma, sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    height: 30px;
+    width: 250px;
+    margin-bottom: 15px;
+    border: none;
+    outline-color: teal;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: inherit;
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.2);
+}
+button {
+    width: 260px;
+    padding: 5px;
+    border: none;
+    height: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.2);
+    outline: none;
+    color: white;
+    background: teal;
+}
+button:hover {
+    color: teal;
+    background: lightblue;
+}
+img {
+    width: 25px;
+    height: 25px;
+    margin-left:10px;
+    margin-top: 5px;
+}
+.tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item {
+    position: relative;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+table {
+    width: 350px;
+    text-align: left;
+    text-overflow: ellipsis;
+}
+th {
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.2);
+    max-width: 150px;
+    background: teal;
+    padding: 10px;
+    text-overflow: ellipsis;
+}
+td {
+    background: white;
+    padding: 10px;
+    text-overflow: ellipsis;
+}
+.pri {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+h4 {
+    text-align: center;
+}
+body, html {
+    width: 100%;
+    overflow-x: hidden;
+
+}
+@media print {
+    body,html { margin-top:0%;
+        display:block;
+        
+        width: 100%;
+        height:100%;
+        background: linear-gradient(140deg,teal, lightblue);
+    }
+}
